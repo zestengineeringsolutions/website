@@ -1,0 +1,122 @@
+body{
+  font-family:'Source Sans 3', Arial, sans-serif;
+  color:#333333;
+  max-width:1000px;
+  margin:0 auto;
+  padding:0 24px;
+}
+
+h1{
+  color:#14657e;
+  font-size:2.2rem;
+  line-height:1.15;
+  margin:0 0 20px;
+}
+h2{
+  font-size:1.4rem;
+  line-height:1.25;
+  margin:48px 0 14px;
+  padding-bottom:10px;
+  border-bottom:1px solid #dddddd;
+  color:#14657e;
+}
+
+h3{
+  font-size:1.05rem;
+  margin:0 0 4px;
+}
+
+p{
+  max-width:68ch;
+}
+
+.button{
+  background-color:#eef1f0;
+  padding:12px;
+  display:block;
+}
+
+.stats{
+  display:flex;
+  gap:40px;
+}
+
+nav{
+  display:flex;
+  gap:24px;
+  padding:16px 0;
+  border-bottom:1px solid #cccccc;
+}
+
+nav a{
+  color:#14657e;
+  text-decoration:none;
+}
+
+img{
+  max-width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+table{
+  border-collapse:collapse;
+  width:100%;
+}
+
+th, td{
+  text-align:left;
+  padding:10px;
+  border-bottom:1px solid #dddddd;
+}
+
+th{
+  border-bottom:2px solid #14657e;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+@media (max-width: 700px){
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .stats{
+    flex-direction:column;
+    gap:8px;
+  }
+  .team-grid{
+    grid-template-columns:1fr;
+  }
+  h1{
+    font-size:1.6rem;
+  }
+
+  table{
+    display:block;
+    overflow-x:auto;
+  }
+}
+.team-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:28px;
+}
+
+.member{
+  border-top:2px solid #14657e;
+  padding-top:14px;
+}
+
+.role{
+  color:#64787f;
+  font-size:0.9rem;
+  margin-top:0;
+}
+:root{
+  --brand:#0B7A3B;
+}
